@@ -1,38 +1,248 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+
+header{
+    background-color: #FEB614;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    font-family: Baskerville;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+header h1{
+    color: black;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.banner{
+    position: relative;
+    top: 50px;
+}
+.banner img{
+    max-width: 100%;
+}
+
+.banner .welcome{
+    background-color: #FEB614;
+    padding: 31px;
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+.banner h2{
+    font-size: 38px;
+}
+
+.banner h2 span{
+    font-size: 1em;
+}
+
+nav{
+    background-color: black;
+    padding: 20px;
+}
+
+nav li{
+    width: 20%;
+    display: inline-block;
+    font-size: 25px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav li a.about {
+    color: #FEB614;
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+article h2{
+    color: black;
+    font-size: 48px;
+}
+
+article p{
+    line-height: 2em;
+}
+
+.images{
+    text-align: center;
+    margin: 80px 0;
+}
+
+.images li{
+    display: inline-block;
+    width: 50%;
+    margin: 20px 5%;
+}
+
+.images li img{
+    max-width: 150%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+
+.social img{
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+
+}
+
+
+
+@media  screen and (min-width: 800px){
+    .banner .welcome h2{
+       font-size: 
+       38px;
+    }
+    
+}
+
+@media  screen and (max-width: 700px){
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin: 25px auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    nav li{
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    header{
+        position: relative;
+    }
+    
+}
+
+input[type=text], select, textarea{
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: #125688;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #125688;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+.text {
+    height: 200px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
 }
+
+table td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+table th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+.movies ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
